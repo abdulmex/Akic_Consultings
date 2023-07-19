@@ -3,18 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   /* background-color: hsl(221, 51%, 16%); */
+}
+header {
+  background-color: hsl(221, 51%, 16%);
+}
+main {
   background-color: hsl(216, 100%, 4%);
+  height: 90vh;
 }
 nav {
-  position: static;
+  position: sticky;
   top: 0;
 }
 li a {
   font-size: 17px;
   color: bisque;
-}
-.wecan-img {
-  aspect-ratio: 5/4;
 }
 .main-text {
   padding-top: 90px;
