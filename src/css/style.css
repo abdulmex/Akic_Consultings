@@ -2,24 +2,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: hsl(221, 51%, 16%); */
-}
-header {
   background-color: hsl(221, 51%, 16%);
 }
-main {
-  background-color: hsl(216, 100%, 4%);
-  height: 90vh;
-}
-nav {
-  position: sticky;
-  top: 0;
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 li a {
-  font-size: 17px;
-  color: bisque;
+  font-size: 20px;
 }
-.main-text {
-  padding-top: 90px;
-  color: white;
+li a:hover {
+  padding-bottom: 0.4em;
+  border-bottom: 0.1em solid #0d6efd;
+}
+main {
+  color: whitesmoke;
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+.btn:hover .btn-text-two {
+  top: 50%;
 }
