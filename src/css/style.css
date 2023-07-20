@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(221, 51%, 16%);
+  /* background-color: hsl(221, 51%, 16%); */
 }
 .navbar {
   -webkit-backdrop-filter: blur(8px);
@@ -12,13 +12,9 @@ li a {
   font-size: 20px;
 }
 li a:hover {
-  padding-bottom: 0.4em;
+  /* padding-bottom: 0.4em; */
   border-bottom: 0.1em solid #0d6efd;
 }
-main {
-  color: whitesmoke;
-}
-
 .btn {
   width: 130px;
   height: 40px;
@@ -57,4 +53,8 @@ main {
 }
 .btn:hover .btn-text-two {
   top: 50%;
+}
+
+img {
+  border-radius: 15px;
 }
