@@ -30,7 +30,6 @@ li a:hover {
 }
 .btn span {
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   transition: top 0.5s;
 }
@@ -57,4 +56,9 @@ li a:hover {
 
 img {
   border-radius: 15px;
+}
+.cont {
+  height: 90vh;
+  background-color: aquamarine;
+  text-align: center;
 }
