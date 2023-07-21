@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.link-a {
+  font-size: 20px;
+}
+.link-a:hover {
+  border-bottom: 0.1em solid #0d6efd;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.btn span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+.btn:hover .btn-text-two {
+  top: 50%;
+}
