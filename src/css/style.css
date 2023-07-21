@@ -7,6 +7,8 @@
 .navbar {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
 }
 li a {
   font-size: 20px;
@@ -58,7 +60,16 @@ img {
   border-radius: 15px;
 }
 .cont {
-  height: 90vh;
-  /* background-color: aquamarine; */
+  height: 85vh;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../imgs/eden-constantino-OXmym9cuaEY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-section-1 {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(207, 29%, 94%);
 }
