@@ -10,10 +10,10 @@
   position: fixed;
   top: 0;
 }
-li a {
+.link-a {
   font-size: 20px;
 }
-li a:hover {
+.link-a:hover {
   /* padding-bottom: 0.4em; */
   border-bottom: 0.1em solid #0d6efd;
 }
@@ -57,7 +57,7 @@ li a:hover {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .cont {
   height: 85vh;
@@ -68,8 +68,8 @@ img {
   background-size: cover;
 }
 .home-section-1 {
-  height: 60vh;
+  /* height: 50vh; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: hsl(207, 29%, 94%);
+  margin: 30px 0px;
 }
