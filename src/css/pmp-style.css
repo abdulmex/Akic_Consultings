@@ -50,3 +50,25 @@
 .btn:hover .btn-text-two {
   top: 50%;
 }
+.pmp-main {
+  margin-top: 100px;
+}
+.main-img {
+  /* background-image: url(../imgs/Zoom\ Training.webp); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+:root {
+  --primary-color: #007bff;
+  --background-color: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --primary-color: #bada55;
+  --background-color: #333;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
