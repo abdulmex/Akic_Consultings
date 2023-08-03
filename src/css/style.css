@@ -8,6 +8,12 @@
   --primary-color: #bada55;
   --background-color: hsl(236, 43%, 12%);
   --text-color: #fff;
+  .nav-link {
+    &.active,
+    &.show {
+      color: white;
+    }
+  }
 }
 
 body {
@@ -17,4 +23,11 @@ body {
 
 .container {
   margin-top: 20px;
+}
+
+.nav-link {
+  &.active,
+  &.show {
+    color: black;
+  }
 }
