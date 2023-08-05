@@ -1,9 +1,3 @@
-:root {
-  --primary-color: #007bff;
-  --background-color: #f8f9fa;
-  --text-color: #000;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +7,54 @@
 .navbar {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] {
+  --primary-color: #bada55;
+  --background-color: hsl(236, 43%, 12%);
+  --text-color: #fff;
+  .nav-link {
+    &.active,
+    &.show {
+      color: white;
+    }
+  }
+  .ham-burger {
+    color: #c4c5cb;
+  }
+  .nav-link:hover {
+    color: #0d6efd;
+  }
+  .nav-link {
+    color: white;
+  }
+}
+
+.nav-link:hover {
+  border-bottom: 0.1em solid #0d6efd;
+  color: #0d6efd;
+}
+
+.nav-link {
+  color: black;
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.nav-link {
+  &.active,
+  &.show {
+    color: black;
+    font-size: 18px;
+  }
 }
 
 .btn {
@@ -52,54 +94,6 @@
 }
 .btn:hover .btn-text-two {
   top: 50%;
-}
-
-[data-theme="dark"] {
-  --primary-color: #bada55;
-  --background-color: hsl(236, 43%, 12%);
-  --text-color: #fff;
-  .nav-link {
-    &.active,
-    &.show {
-      color: white;
-    }
-  }
-  .ham-burger {
-    color: #c4c5cb;
-  }
-  .nav-link:hover {
-    color: #0d6efd;
-  }
-  .nav-link {
-    color: white;
-  }
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.container {
-  margin-top: 20px;
-}
-
-.nav-link {
-  &.active,
-  &.show {
-    color: black;
-    font-size: 18px;
-  }
-}
-
-.nav-link:hover {
-  border-bottom: 0.1em solid #0d6efd;
-  color: #0d6efd;
-}
-
-.nav-link {
-  color: black;
-  font-size: 15px;
 }
 
 .body-img {
