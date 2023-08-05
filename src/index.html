@@ -13,22 +13,19 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imgs/alkic.ico" type="image/x-icon">
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg shadow pb-2 mb-3 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Alkic Consulting</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="ham-burger" width="36" height="36" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.975 5.975h16"></path>
+              <path d="M3.975 11.975h16"></path>
+              <path d="M3.975 17.975h16"></path>
+            </svg>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 me-lg-4 text-center">
@@ -65,15 +62,18 @@
                   </li>
                 </ul>
               </li>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-outline-primary mx-2 type="submit">
+                  <span class="btn-text-one fs-6 text-white">Contact</span
+                  ><span class="btn-text-two fs-6 text-white">Welcome</span>
+                </button>
+                <div class="form-check form-switch m-2">
+                  <input class="form-check-input"  id="theme-toggle"type="checkbox" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                </div>
+              </div>
             </ul>
-            <button class="btn btn-outline-primary" type="submit">
-              <span class="btn-text-one fs-6 text-white">Contact</span
-              ><span class="btn-text-two fs-6 text-white">Welcome</span>
-            </button>
-            <label class="form-check form-switch ms-3" id="theme-toggle">
-              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            </label>
-          </div>
+          </div>  
         </div>
       </nav>
     </header>
@@ -103,21 +103,21 @@
           <div class="container small-cards">
             <h1 class="text-center">We Help Our Clients to...</h1>
             <div class="row mx-auto">
-              <div class="col-sm text-center my-4">
+              <div class="col-sm text-center my-4 animate__animated animate__slideInLeft">
                 <img class="image-fluid list-img" src="./imgs/list-img-1.svg" alt="">
                 <h3 class="pt-4">Improve Orgisational Performance</h3>
                 <p class="fs-5">Lorem ipsum a rem quibusdam ad atque dolores 
                   blanditiis autem molestiae repellendus laudantium?
                 </p>
               </div>
-              <div class="col-sm text-center border-bottom shadow my-4">
+              <div class="col-sm text-center border-bottom shadow my-4 animate__animated animate__slideInUp">
                 <img src="./imgs/list-img-2.svg" alt="" class="img-fluid list-img">
                 <h3 class="pt-4">Boost Team Work and Collaboration</h3>
                 <p class="fs-5">
                   Lorem ipsum dolor sit amet temporibus voluptatibus velit accusantium minima, dignissimos enim!
                 </p>
               </div>
-              <div class="col-sm text-center my-4">
+              <div class="col-sm text-center my-4 animate__animated animate__slideInRight">
                 <img src="./imgs/list-img-3.2.svg" alt="" class="img-fluid list-img">
                 <h3 class="pt-4">Enhance Project Team Capabilities</h3>
                 <p class="fs-5">
@@ -159,7 +159,7 @@
                   </div>
                 </div>
                 <!-- div col 2 -->
-                <div class="col py-5">
+                <div class="col py-5 animate__animated animate__flipInX">
                   <div class="card shadow m-auto" style="width: 20rem">
                     <img
                       class="card-img-top"
@@ -209,8 +209,9 @@
           </section>
         </section>
     </main>
+    <!-- Some of Our Clients -->
     <section>
-      <div class="container">
+      <div class="container animate__animated animate__lightSpeedInLeft">
         <h1 class="text-center">Some of Our Clients</h1>
         <p class="fs-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
         <div class="row align-items-center">
@@ -229,6 +230,59 @@
         </div>
       </div>
     </section>
+    <div class="container shadow animate__animated animate__fadeInUpBig">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center mb-3">
+          <li class="nav-item"><a href="http://www.twitter.com/AlkicConsulting" class="nav-link">
+            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83A7.72 7.72 0 0 0 23 3Z"></path>
+            </svg>
+          </a></li>
+          <li class="nav-item"><a href="https://www.linkedin.com/company/alkic-consulting?trk=biz-companies-cym" class="nav-link">
+            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <path d="M2 9h4v12H2z"></path>
+              <path d="M4 2a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"></path>
+            </svg>
+          </a></li>
+          <li class="nav-item"><a href="http://www.facebook.com/AlkicConsulting" class="nav-link">
+            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a></li>
+        </ul>
+        <ul class="nav justify-content-center mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2">Live Online PMP Classes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Scrum Master Class</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">Courses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+        </ul>
+        <ul class="nav justify-content-center">
+          <address class="nav-item fs-6">
+            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.25c-3.727 0-6.75 2.878-6.75 6.422 0 4.078 4.5 10.54 6.152 12.773a.739.739 0 0 0 1.196 0c1.652-2.231 6.152-8.692 6.152-12.773 0-3.544-3.023-6.422-6.75-6.422Z"></path>
+              <path d="M12 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path>
+              </svg>
+            House 5, 31 Road, Gowon Estate, Lagos, NIGERIA
+          </address>
+          <li class="nav-item mx-lg-3 px-2 fs-6">
+            <svg width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.14 17.53c-.744-.75-2.546-1.844-3.421-2.285-1.139-.574-1.233-.62-2.128.045-.597.444-.994.84-1.693.691-.7-.149-2.218-.99-3.548-2.315-1.33-1.326-2.219-2.889-2.368-3.585-.15-.697.253-1.09.693-1.688.62-.843.573-.984.043-2.123-.413-.886-1.54-2.672-2.292-3.413-.805-.795-.805-.654-1.324-.439a7.508 7.508 0 0 0-1.211.646c-.75.498-1.166.912-1.457 1.534-.292.622-.422 2.08 1.081 4.811s2.558 4.127 4.74 6.304c2.184 2.177 3.862 3.348 6.316 4.724 3.036 1.7 4.2 1.369 4.824 1.078.624-.29 1.04-.703 1.54-1.453a7.43 7.43 0 0 0 .646-1.21c.216-.516.357-.516-.44-1.321Z"></path>
+              </svg>
+              +234 806 437 4105
+          </li>
+          <li class="nav-item px-2 fs-6">
+            <svg width="23" height="23" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.875 4.5H4.125c-1.036 0-1.875.84-1.875 1.875v11.25c0 1.035.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875V6.375c0-1.036-.84-1.875-1.875-1.875Z"></path>
+              <path d="M5.25 7.5 12 12.75l6.75-5.25"></path>
+              </svg>
+              info@alkicconsulting.com 
+          </li>
+        </ul>
+        <p class="text-center">&copy; 2023 Alkic Consulting, Inc</p>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
