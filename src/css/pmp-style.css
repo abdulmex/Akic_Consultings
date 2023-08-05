@@ -3,15 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
-.link-a {
-  font-size: 20px;
-}
-.link-a:hover {
+
+.nav-link:hover {
   border-bottom: 0.1em solid #0d6efd;
+  color: #0d6efd;
 }
+
+.nav-link {
+  color: black;
+  font-size: 15px;
+}
+
 .btn {
   width: 130px;
   height: 40px;
@@ -22,7 +29,7 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 .btn span {
@@ -50,25 +57,37 @@
 .btn:hover .btn-text-two {
   top: 50%;
 }
-.pmp-main {
-  margin-top: 100px;
-}
-.main-img {
-  /* background-image: url(../imgs/Zoom\ Training.webp); */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-:root {
-  --primary-color: #007bff;
-  --background-color: #f8f9fa;
-}
 
 [data-theme="dark"] {
   --primary-color: #bada55;
-  --background-color: #333;
+  --background-color: hsl(236, 43%, 12%);
+  --text-color: #fff;
+  .nav-link {
+    &.active,
+    &.show {
+      color: white;
+    }
+  }
+  .ham-burger {
+    color: #c4c5cb;
+  }
+  .nav-link:hover {
+    color: #0d6efd;
+  }
+  .nav-link {
+    color: white;
+  }
 }
 
 body {
   background-color: var(--background-color);
-  color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.nav-link {
+  &.active,
+  &.show {
+    color: black;
+    font-size: 18px;
+  }
 }
