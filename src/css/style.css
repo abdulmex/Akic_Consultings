@@ -10,14 +10,10 @@
   box-sizing: border-box;
 }
 
-/* .cont {
-  height: 85vh;
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../imgs/eden-constantino-OXmym9cuaEY-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+.navbar {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
 
 .btn {
   width: 130px;
@@ -68,7 +64,7 @@
       color: white;
     }
   }
-  .nav-link:hover{
+  .nav-link:hover {
     color: #0d6efd;
   }
 }
@@ -103,4 +99,23 @@ body {
 .body-img {
   margin-top: 90px;
   border-radius: 15px;
+}
+
+.section1 {
+  margin-top: 140px;
+}
+
+.small-cards{
+  margin-top: 150px;
+}
+
+.col-sm {
+  /* border: 1px solid red; */
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.list-img {
+  width: 100px;
+  border-radius: 10px;
 }
