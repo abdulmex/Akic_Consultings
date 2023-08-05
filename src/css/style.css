@@ -102,7 +102,7 @@ body {
 }
 
 .section1 {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 
 .small-cards{
@@ -110,12 +110,14 @@ body {
 }
 
 .col-sm {
-  /* border: 1px solid red; */
-  border: 2px solid transparent;
   border-radius: 10px;
 }
 
 .list-img {
   width: 100px;
   border-radius: 10px;
+}
+
+.work-with-img {
+  width: 130px;
 }
