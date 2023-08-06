@@ -27,6 +27,7 @@
   }
 }
 
+/* All buttons */
 .btn {
   width: 130px;
   height: 40px;
@@ -85,6 +86,10 @@
   .nav-link {
     color: white;
   }
+  .cards {
+    color: white;
+    background-color:#11132c;
+  }
   .card {
     color: white;
     background-color:#11132c;
@@ -97,8 +102,8 @@ body {
 }
 
 .main-page {
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 20vh;
+  margin-bottom: 20vh; 
 }
 
 .main-img {
@@ -106,26 +111,24 @@ body {
 }
 
 .section1 {
-  margin-top: 110px;
+  margin-top: 10vh;
 }
 
+/* Why choose Alkic COnsulting */
 .card-title {
   font-size: 1.5em;
   line-height: normal;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-
 .small-desc {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5em;
 }
-
 .small-desc {
   font-size: 1em;
 }
-
 .go-corner {
   display: flex;
   align-items: center;
@@ -147,8 +150,7 @@ body {
   color: white;
   font-family: courier, sans;
 }
-
-.card {
+.cards {
   display: block;
   position: relative;
   max-width: 500px;
@@ -162,7 +164,59 @@ body {
   background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+.cards:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #364a60, #384c6c);
+  height: 32px;
+  width: 40px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+.cards:hover:before {
+  transform: scale(28);
+}
+.cards:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+.cards:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
 
+/* Praise and Reviews  */
+.review-container {
+  margin-bottom: 15vh;
+}
+.testimony {
+  margin-top: 15vh;
+}
+.user-review{
+  font-size: 17px;
+}
+
+/* FAQ Cards */
+.faq-card {
+  margin-top: 5vh;
+}
+.card {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 .card:before {
   content: '';
   position: absolute;
@@ -177,17 +231,33 @@ body {
   transform-origin: 50% 50%;
   transition: transform 0.35s ease-out;
 }
-
 .card:hover:before {
   transform: scale(28);
 }
-
-.card:hover .small-desc {
-  transition: all 0.5s ease-out;
-  color: rgba(255, 255, 255, 0.8);
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
-
-.card:hover .card-title {
-  transition: all 0.5s ease-out;
-  color: #ffffff;
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ebf0f4;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card:hover svg {
+  scale: 0;
+}
+.card__description {
+  color: #777;
+  line-height: 1.4;
 }
