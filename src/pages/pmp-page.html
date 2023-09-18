@@ -20,14 +20,25 @@
     <header>
       <nav class="navbar navbar-expand-lg shadow pb-2 mb-3 fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Alkic Consulting</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg class="ham-burger" width="36" height="36" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.975 5.975h16"></path>
-              <path d="M3.975 11.975h16"></path>
-              <path d="M3.975 17.975h16"></path>
-            </svg>
-          </button>
+          <a class="navbar-brand mx-auto" href="../index.html">Alkic Consulting</a>
+          <input
+            hidden=""
+            class="check-icon"
+            id="check-icon"
+            name="check-icon"
+            type="checkbox"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          />
+          <label class="icon-menu d-sm-flex d-lg-none" for="check-icon">
+            <div class="bar bar--1"></div>
+            <div class="bar bar--2"></div>
+            <div class="bar bar--3"></div>
+          </label>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 me-lg-4 text-center">
               <li class="nav-item">
@@ -36,7 +47,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Scrum Master Class</a>
+                <a class="nav-link active" href="./scrum.html">Scrum Master Class</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="../pages/pricing.html">Pricing</a>
@@ -321,10 +332,10 @@
         </ul>
         <ul class="nav justify-content-center mb-3">
           <li class="nav-item"><a href="./pmp-page.html" class="nav-link px-2">Live Online PMP Classes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2">Scrum Master Class</a></li>
+          <li class="nav-item"><a href="./scrum.html" class="nav-link px-2">Scrum Master Class</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2">Courses</a></li>
           <li class="nav-item"><a href="./pricing.html" class="nav-link px-2">Pricing</a></li>
-          <li class="nav-item"><a href="#" id="faq-section" class="nav-link px-2">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
         </ul>
         <ul class="nav justify-content-center">
